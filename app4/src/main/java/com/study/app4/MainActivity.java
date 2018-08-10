@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    // 어댑터 연결 : 데이터 -> 어댑터 -> 어댑터 뷰
+
     // 데이터 담기 위한 변수
     ArrayList<String> arrayList = null;
     // array 어댑터 변수 -> 어댑터 뷰와 연결하기 위한 변수

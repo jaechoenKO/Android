@@ -9,6 +9,8 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // xml에서 데이터 선언 시 데이터를 자바에 선언 하지 않아도 됨.
+
     ArrayAdapter<CharSequence> arrayAdapter = null;
     ListView listView = null;
 
