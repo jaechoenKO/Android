@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+        아이템 스타일을 정의한 xml
+        아이템 뷰를 정의 하는 작업은 java파일에서 한다. (어댑터를 이용하여 정의)
+    -->
+    <ImageView
+        android:id="@+id/ico_game"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_comment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택"/>
+
+</LinearLayout>

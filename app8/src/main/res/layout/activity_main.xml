@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+        weight를 줄 때 대부분 0dp로 준다. layout_height="0dp"로 준 것은 vertical이기 때문
+        horizantal이면 layout_width가 0dp
+     -->
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Game List"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lv01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    </ListView>
+
+</LinearLayout>

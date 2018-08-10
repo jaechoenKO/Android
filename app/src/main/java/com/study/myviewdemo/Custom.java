@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 
+// 커스텀 뷰, 도형그리기, onDraw(), canvas, paint
 // View를 상속을 받아야 한다.
 public class Custom extends View{
 
@@ -40,6 +41,7 @@ public class Custom extends View{
 
         paint.setColor(Color.RED);
         canvas.drawPoint(900, 900, paint);
+
     }
 
 }
