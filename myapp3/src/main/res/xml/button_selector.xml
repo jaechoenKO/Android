@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        버튼 상태
+        state_focused : 버튼에 포커스가 올 때.
+        state_selected : 사용자가 버튼을 선택 했을 때.
+        state_pressed : 사용자가 버튼을 클릭 했을 때.
+        state_enabled : 버튼을 사용 할 수 있는 상태. 즉 활성화 된 상태 반대되는 개념 disable
+    -->
+
+    <!--단일 테그-->
+    <item
+        android:drawable="@xml/button_bg_pressed"
+        android:state_pressed="true"/>
+    <item
+        android:drawable="@xml/button_bg_unpressed"
+        android:state_pressed="false"/>
+</selector>

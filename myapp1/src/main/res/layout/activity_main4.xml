@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f0">
+
+    <!--
+        부모 컨테이너의 상대적 위치를 이용하는 속성
+    -->
+
+    <!--
+        부모 컨테이너의 상대적 위치를 이용하는 속성
+        layout_alignParentTop : 상단에 배치
+        layout_alignParentBottom : 하단에 배치
+        layout_alignParentLeft : 왼쪽에 붙는다. 뷰의 왼쪽과 부모의 왼쪽을 맞춘다.
+        layout_alignParentRight : 오른쪽에 붙는다.
+        layout_centerHorizontal : 수평으로 놓고 중앙에 배치한다.
+        layout_centerVertical : 세로로 중앙에 배치한다.
+        centerHorizonta, centerVertical 이 두개를 합친 것이 centerInParent
+        layout_centerInParent : 정중앙에 배치
+        layout_below : 해당 id 값 아래에 배치
+    -->
+
+
+    <!--배치 렐라티브 레이아웃 속성은 사용하지 않는다.-->
+    <TextView
+        android:id="@+id/txt_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Center"
+        android:textSize="30dp"
+        android:background="#ff0"/>
+
+    <!--
+        android:layout_toRightOf="@id/txt_center"
+        txt_center를 기준점으로 오른쪽에 배치
+        android:layout_alignBaseline="@id/txt_center"
+        txt_center를 기준으로 밑줄을 맞춰라
+    -->
+    <TextView
+        android:id="@+id/txt_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f00"
+        android:text="Right"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/txt_center"
+        android:layout_alignBaseline="@id/txt_center"/>
+
+    <!--
+        android:layout_alignParentBottom="true
+        부모 컨테이너를 기준으로 하단에 배치 하겠다.
+        부모 컨테이너는 초록색 레이아웃.
+    -->
+    <TextView
+        android:id="@+id/txt_parent_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="ParentBottom"
+        android:textSize="30dp"
+        android:background="#f0f"/>
+
+    <!--
+         android:layout_above="@id/txt_parent_bottom"
+         txt_parent_bottom"의 윗부분에 배치 시켜라.
+    -->
+    <!--<TextView-->
+        <!--android:id="@+id/txt_top"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@id/txt_parent_bottom"-->
+        <!--android:text="top"-->
+        <!--android:textSize="30dp"-->
+        <!--android:background="#0ff"/>-->
+
+    <!--
+        layout_alignEnd 17버전 이하는 실행 되지 않는다.
+    -->
+    <TextView
+        android:id="@+id/txt_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/txt_parent_bottom"
+        android:text="top"
+        android:textSize="30dp"
+        android:background="#0ff"/>
+
+</RelativeLayout>

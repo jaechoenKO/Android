@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--
+         android:typeface="serif" : 글씨체
+         android:singleLine="true" : 내용이 길면 그 뒤 내용은 ...으로 표시
+         android:textStyle : 글씨의 스타일 3가지.
+    -->
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name1"
+        android:textColor="#8f00"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name1"
+        android:textColor="#8f00"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name1"
+        android:textColor="#8f00"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"/>
+
+    
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테스트"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@xml/button_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="독서"
+            android:paddingRight="5dp"
+            android:textColor="#8888aa"/>
+
+        <CheckBox
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여행"
+            android:paddingRight="5dp"
+            android:textColor="#8888aa"/>
+
+        <CheckBox
+            android:id="@+id/tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동"
+            android:paddingRight="5dp"
+            android:textColor="#8888aa"/>
+
+        <CheckBox
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영화감상"
+            android:paddingRight="5dp"
+            android:textColor="#8888aa"/>
+
+        <CheckBox
+            android:id="@+id/movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"/>
+
+    </LinearLayout>
+
+    <!--
+        라디오 버튼은 그룹으로 묶어주어야 편하다.
+        설정하지 않으면 방향성 orientation을 사용하지 못하고 중복 체크가 된다.
+   -->
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남자"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여자"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+    <!--
+        android:inputType : 입력 가능한 문자 설정
+        ex)number : 숫자만 입력 가능.
+           textCapWords : 첫글자는 대문자.
+           textCapCharacters : 모두 대문자.
+           textEmailAddress : 이메일 형식
+           text : 문자 입력
+    -->
+    <EditText
+        android:id="@+id/testInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="아무 글자나 입력하세요"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"/>
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_launcher_foreground"/>
+
+
+</LinearLayout>

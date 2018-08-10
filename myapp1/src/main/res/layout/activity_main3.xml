@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true">
+    <!--baselineAligned : base 라인 이라 해서 글자 밑을 기준으로 줄을 맞춤.
+    속성을 적지 않으면 자동으로 true값을 가지고, false라고 하면 글자 줄이 맞지 않는다.-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--
+        android:layout_weight="1" 화면을 분할 해서 정렬
+        3개의 TextView에 1씩 주었으니 1/3씩 나누어 정렬 된다.
+        -->
+
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트"
+            android:textColor="#00f"
+            android:textSize="20dp"
+            android:background="#ff0"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트"
+            android:textColor="#00f"
+            android:textSize="20dp"
+            android:background="#0f0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트"
+            android:textColor="#00f"
+            android:textSize="20dp"
+            android:background="#0ff"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!--3개의 weight 기준치와 2개의 weight 기준치가 다르다.-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8f0f">
+
+        <TextView
+            android:id="@+id/test04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트"
+            android:textSize="20dp"
+            android:background="#83F"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/test05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트2"
+            android:textSize="20dp"
+            android:background="#835a"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

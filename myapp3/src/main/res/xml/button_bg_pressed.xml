@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--모서리 모양-->
+    <corners android:radius="5dp"/>
+    <!--색상의 변화-->
+    <gradient
+        android:centerColor="#7be"
+        android:endColor="#ff7"
+        android:startColor="#9ce"/>
+</shape>

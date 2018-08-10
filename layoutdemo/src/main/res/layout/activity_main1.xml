@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- 기본으로 좌측 상단에 위치-->
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[회원가입]"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+    <!--위치를 지정하지 않아 좌측 상단에 붙는다
+        위에 있는 TextView 아래에 위치 시킨다.-->
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title">
+
+        <!--상대적으로 배치를 하지 않아 TextView와 EditText가 겹친다.-->
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ID : "
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="아이디를 입력하세요."
+            android:layout_toRightOf="@id/txt_id"
+            android:layout_alignBaseline="@id/txt_id"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1">
+
+    <!--상대적으로 배치를 하지 않아 TextView와 EditText가 겹친다.
+    alinBaseLine으로 밑줄로 줄맞춤을 할 수 있지만. centerVertical을 써주면
+    더 편리하게 정렬할 수 있다.-->
+    <TextView
+        android:id="@+id/txt_pw"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="PW : "
+        android:textSize="20sp"
+        android:gravity="right"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력하세요."
+        android:layout_toRightOf="@id/txt_pw" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2">
+
+        <!--상대적으로 배치를 하지 않아 TextView와 EditText가 겹친다.-->
+        <TextView
+            android:id="@+id/txt_pwConfirm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PW 확인 : "
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 확인하세요."
+            android:layout_toRightOf="@id/txt_pwConfirm" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r3">
+
+        <!--상대적으로 배치를 하지 않아 TextView와 EditText가 겹친다.-->
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="이름 : "
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="이름을 입력하세요"
+            android:layout_toRightOf="@id/txt_name" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

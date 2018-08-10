@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--
+    gravity : 뷰에서 내용물을 배치하는 방법
+    layout_gravity : 부모 컨테이너에서 뷰를 배치하는 방법
+    -->
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="정렬"
+        android:textColor="#00f"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="#ff0"/>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--배열로 넣으면 item으로 내용을 넣어야한다.-->
+    <string-array name="contact">
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+        <item>길말똥 010-222-2323</item>
+    </string-array>
+</resources>

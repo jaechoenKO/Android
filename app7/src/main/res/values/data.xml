@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country">
+        <item>미국</item>
+        <item>홍콩</item>
+        <item>영국</item>
+        <item>중국</item>
+        <item>태국</item>
+        <item>대만</item>
+        <item>한국</item>
+        <item>일본</item>
+        <item>필리핀</item>
+        <item>베트남</item>
+        <item>호주</item>
+        <item>독일</item>
+        <item>벨기에</item>
+        <item>프랑스</item>
+        <item>포르투갈</item>
+        <item>스페인</item>
+        <item>슬로바키아</item>
+        <item>러시아</item>
+    </string-array>
+</resources>
