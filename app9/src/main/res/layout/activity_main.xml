@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+        numColumns : 칼럼 칸의 갯 수, 칼럼을 정의해 주어야하고, n개의 rows.
+        verticalSpacing : 세로 칸과 칸의 간격.
+        horizontalSpacing : 가로 칸과 칸의 간격.
+    -->
+    <GridView
+        android:id="@+id/gv01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        android:gravity="center"/>
+
+</LinearLayout>
