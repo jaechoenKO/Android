@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+        Gallery는 현재 잘 사용하지 않는다.
+        layout_alignParentBottom : 젤 아래에 위치.
+    -->
+    <Gallery
+        android:id="@+id/gallery01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#aaa"/>
+
+    <!--
+        adjustViewBounds : 일정한 비율로 유지. 가로와 세로의 비율을 유지하며 조정 할 것인가.
+    -->
+    <ImageView
+        android:id="@+id/img01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gallery01"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/g1"/>
+
+
+</RelativeLayout>
